@@ -37,7 +37,7 @@ namespace PresentlyPOC.Infra.ExternalServices
                         Content = $"Crie um slide em LaTeX sobre o tema {request.Theme} com a autoria de {request.Author}. Observações: {request.Comments}. Forneça apenas o código LaTeX, incluindo o \\begin{{document}} e \\end{{document}}, sem explicações ou formatação extra. Se não for possível gerar o slide, retorne apenas uma resposta vazia."
                     }
                 },
-                max_tokens = 1000,
+                max_tokens = 16384,
                 temperature = 0.7
             };
             var json = JsonSerializer.Serialize(payload);
