@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace PresentlyPOC.Servíces.Interfaces
+﻿namespace PresentlyPOC.Services.Interfaces
 {
     public interface IPdfExportService
     {

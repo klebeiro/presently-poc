@@ -1,5 +1,5 @@
 using PresentlyPOC.Models;
-using PresentlyPOC.Servíces.Interfaces;
+using PresentlyPOC.Services.Interfaces;
 using PresentlyPOC.Services;
 using PresentlyPOC.Infra.ExternalServices.Interfaces;
 using PresentlyPOC.Infra.ExternalServices;
