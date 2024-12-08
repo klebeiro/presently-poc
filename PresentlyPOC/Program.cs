@@ -11,16 +11,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPdfExportService, PdfExportService>();
 builder.Services.AddScoped<IOpenAIService, OpenAIService>();
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowSpecificOrigin", builder =>
-    {
-        builder.WithOrigins("http://localhost:3000") 
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
-});
-
 builder.Services.AddHttpClient("OpenAIApi", client =>
 {
     client.BaseAddress = new Uri("https://api.openai.com/");
