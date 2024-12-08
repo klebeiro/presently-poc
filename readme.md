@@ -90,6 +90,7 @@ The PDF generator accepts a POST request with the following JSON payload:
         "apiKey": "your_api_key"
     }
 ```
+OBS: you need to have credits to use the API.
 
 ### Request Example:
 ```bash
